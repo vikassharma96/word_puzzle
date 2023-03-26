@@ -1,5 +1,6 @@
 import {StyleSheet} from 'react-native';
 import colors from '../../styles/colors';
+import {fontFamily, fontSizes} from '../../styles/fonts';
 
 const styles = StyleSheet.create({
   mainContainer: {
@@ -52,6 +53,17 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     textAlignVertical: 'bottom',
     marginBottom: '2%',
+    fontFamily: fontFamily.semiBold,
+    fontSize: fontSizes.fontSize_17,
+    color: colors.light.green,
+  },
+  resultErrorText: {
+    color: colors.light.red,
+  },
+  pointsText: {
+    color: colors.light.green,
+    fontFamily: fontFamily.semiBold,
+    fontSize: fontSizes.fontSize_18,
   },
 });
 

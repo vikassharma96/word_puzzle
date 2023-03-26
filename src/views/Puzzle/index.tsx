@@ -223,6 +223,7 @@ const PuzzleScreen: React.FC<PuzzleScreenProps> = ({navigation, route}) => {
             ref={pagerViewRef}>
             {words.map((currWord, currIndex) => {
               const numOfColumns = Math.min(currWord.word?.length, numColumns);
+              const isNoScore = scoreStatus.currentScore === 0;
               return (
                 <View
                   key={currWord.word}
@@ -231,12 +232,18 @@ const PuzzleScreen: React.FC<PuzzleScreenProps> = ({navigation, route}) => {
                   <AppText>{`${currIndex + 1}/${words.length}`}</AppText>
                   {scoreStatus.showResult ? (
                     <View style={styles.resultContainer}>
-                      <AppText style={styles.resultText}>
-                        {scoreStatus.currentScore === 0
-                          ? WRONG_TEXT
-                          : CORRECT_TEXT}
+                      <AppText
+                        style={[
+                          styles.resultText,
+                          isNoScore && styles.resultErrorText,
+                        ]}>
+                        {isNoScore ? WRONG_TEXT : CORRECT_TEXT}
                       </AppText>
-                      <AppText>{`${EARN_TEXT} ${scoreStatus.currentScore} ${POINTS}`}</AppText>
+                      <AppText
+                        style={[
+                          styles.pointsText,
+                          isNoScore && styles.resultErrorText,
+                        ]}>{`${EARN_TEXT} ${scoreStatus.currentScore} ${POINTS}`}</AppText>
                     </View>
                   ) : (
                     <>
