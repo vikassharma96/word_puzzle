@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
   },
   disableButton: {
     marginBottom: '8%',
-    backgroundColor: 'grey',
+    backgroundColor: colors.default.lightGray,
   },
   resultContainer: {
     flex: 1,

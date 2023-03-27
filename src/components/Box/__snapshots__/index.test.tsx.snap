@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@components/Box should match snapshots 1`] = `
+<View
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "backgroundColor": "#ccc",
+        "height": 40,
+        "justifyContent": "center",
+        "margin": "4%",
+        "width": 40,
+      },
+      false,
+    ]
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "fontFamily": "Poppins-Medium",
+          "fontSize": 14,
+        },
+        {
+          "color": "#000",
+        },
+        {
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    Word Puzzle!
+  </Text>
+</View>
+`;

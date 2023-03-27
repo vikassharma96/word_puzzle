@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@components/CategoryItem should match snapshots 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "alignSelf": "center",
+      "backgroundColor": "#fff",
+      "borderRadius": 6,
+      "borderWidth": 1.5,
+      "marginHorizontal": 8,
+      "marginVertical": "3%",
+      "minWidth": "50%",
+      "opacity": 1,
+      "paddingHorizontal": 16,
+      "paddingVertical": 6,
+      "textAlign": "center",
+    }
+  }
+  testID="item"
+>
+  <Text
+    style={
+      [
+        {
+          "fontFamily": "Poppins-Medium",
+          "fontSize": 14,
+        },
+        {
+          "color": "#000",
+        },
+        undefined,
+      ]
+    }
+  >
+    Food
+  </Text>
+</View>
+`;

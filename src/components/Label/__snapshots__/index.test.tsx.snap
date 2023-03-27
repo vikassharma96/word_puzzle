@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@components/Label should match snapshots 1`] = `
+<View
+  style={
+    [
+      {
+        "alignSelf": "center",
+        "borderRadius": 6,
+        "borderWidth": 1.5,
+        "marginHorizontal": 8,
+        "paddingHorizontal": 16,
+        "paddingVertical": 6,
+        "textAlign": "center",
+      },
+      {
+        "backgroundColor": "#CEDBEB",
+      },
+      {},
+    ]
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "fontFamily": "Poppins-Medium",
+          "fontSize": 14,
+        },
+        {
+          "color": "#000",
+        },
+        undefined,
+      ]
+    }
+  >
+    Next
+  </Text>
+</View>
+`;

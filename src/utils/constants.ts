@@ -13,7 +13,6 @@ export const POINTS = 'Points';
 export const SCORE_SUMMARY = 'Score Summay!';
 export const TOTAL_SCORE = 'Your total score is';
 
-
 // common constants
 export const ERROR = 'Error!';
 export const RETRY = 'Retry';
@@ -22,3 +21,4 @@ export const BUTTON_TEXT_CANCEL = 'Cancel';
 export const SKIP = 'Skip';
 export const NEXT = 'Next';
 export const NO_DATA_AVAILABLE = 'No data available!';
+export const WORD_PUZZLE_TEXT = 'Word Puzzle!';

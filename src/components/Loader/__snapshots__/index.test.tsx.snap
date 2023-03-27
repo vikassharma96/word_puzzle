@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@components/Loader should match snapshots 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "height": "100%",
+      "justifyContent": "center",
+      "opacity": 0.8,
+      "position": "absolute",
+      "width": "100%",
+      "zIndex": 1,
+    }
+  }
+>
+  <ActivityIndicator
+    size="large"
+  />
+</View>
+`;

@@ -127,7 +127,7 @@ const PuzzleScreen: React.FC<PuzzleScreenProps> = ({navigation, route}) => {
       // check to validate whether puzzle solved or not
       let wordToMatch = '',
         wordLength = currentWord.length;
-      selectedBoxes.map(idx => (wordToMatch += currentWord[idx]));
+      selectedBoxes.forEach(idx => (wordToMatch += currentWord[idx]));
       if (words[currIndex].word === wordToMatch) {
         const currScore = wordLength * 10;
         setScoreStatus({
@@ -188,25 +188,27 @@ const PuzzleScreen: React.FC<PuzzleScreenProps> = ({navigation, route}) => {
         selectedBoxes.length === 0 ||
         selectedBoxes.length === currentWord.length
       );
+      const isBoxSelected = selectedBoxes.length !== 0;
+      const isLastPage = activePage === words.length - 1;
       return (
         <Button
           style={hasToDisable ? styles.disableButton : styles.activeButton}
           disabled={hasToDisable}
-          title={selectedBoxes.length === 0 ? SKIP : NEXT}
+          title={isBoxSelected ? NEXT : SKIP}
           onPress={() => {
-            if (selectedBoxes.length === 0) {
-              pagerViewRef.current.setPage(activePage + 1);
+            if (isBoxSelected || isLastPage) {
+              handleOnNext(activePage);
+            } else {
               setSelectedBoxes([]);
               setCurrentWord(shuffleWord(words[activePage + 1].word));
-            } else {
-              handleOnNext(activePage);
+              pagerViewRef.current.setPage(activePage + 1);
             }
           }}
         />
       );
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [activePage, scoreStatus, selectedBoxes],
+    [activePage, scoreStatus, selectedBoxes, words],
   );
 
   return (

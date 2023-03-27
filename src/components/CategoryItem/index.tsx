@@ -27,6 +27,7 @@ const CategoryItem = ({
     <Button
       title={categoryName}
       style={styles.container}
+      testID={'item'}
       onPress={handleOnCategory}
       backgroundColor={
         selectedCategoryId === categoryId
