@@ -1,6 +1,3 @@
-<p align="center">
-<img width="104" height="114" src="logo url" alt="logo">
-</p>
 <h1 align="center">Word Puzzle Game</h1>
 
 [![Platform](https://img.shields.io/badge/Platform-React%20Native-brightgreen)](https://reactnative.dev/docs/getting-started)
@@ -9,6 +6,17 @@
 ## **Getting Started**
 
 This section has the information about how to get get started with the Word Puzzle Game
+
+## **App Demo**
+
+<p align="center">
+<img width="180" height="300" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss1.png" alt="logo">
+<img width="180" height="300" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss2.png" alt="logo">
+<img width="180" height="300" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss3.png" alt="logo">
+<img width="180" height="300" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss4.png" alt="logo">
+<img width="180" height="300" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss5.png" alt="logo">
+<img width="180" height="300" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss6.png" alt="logo">
+</p>
 
 ## **Prerequisites**
 
