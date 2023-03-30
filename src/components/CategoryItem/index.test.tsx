@@ -10,22 +10,31 @@ describe('@components/CategoryItem', () => {
     name: 'Food',
   };
   const selectedCatIdMock = jest.fn();
-  const component = (
-    <CategoryItem
-      category={cateogry}
-      setSelectedCategoryId={selectedCatIdMock}
-    />
-  );
+  const renderComponent = (selectedCategoryId?: string) => {
+    return (
+      <CategoryItem
+        category={cateogry}
+        selectedCategoryId={selectedCategoryId}
+        setSelectedCategoryId={selectedCatIdMock}
+      />
+    );
+  };
 
   it('should match snapshots', () => {
-    const componentTree = renderer.create(component).toJSON();
+    const componentTree = renderer.create(renderComponent()).toJSON();
     expect(componentTree).toMatchSnapshot();
   });
 
-  it('should be able to click on the item', () => {
-    const {getByTestId} = render(component);
+  it('should be able to change background if selected', () => {
+    const {getByTestId} = render(renderComponent('123'));
     const element = getByTestId('item');
-    expect(element).toBeTruthy();
+    expect(element).toBeDefined();
+  });
+
+  it('should be able to click on the item', () => {
+    const {getByTestId} = render(renderComponent());
+    const element = getByTestId('item');
+    expect(element).toBeDefined();
     fireEvent.press(element);
     expect(selectedCatIdMock).toHaveBeenCalled();
   });

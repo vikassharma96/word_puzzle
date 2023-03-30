@@ -11,6 +11,7 @@ const Box = ({text}: IBoxProps) => {
   const [isSelected, setIsSelected] = useState<boolean>(false);
   return (
     <TouchableHighlight
+      testID="box"
       style={[styles.box, isSelected && styles.selectedBox]}
       onPress={() => {
         if (!isSelected) {

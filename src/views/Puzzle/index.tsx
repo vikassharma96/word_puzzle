@@ -27,8 +27,10 @@ import {
   CORRECT_TEXT,
   EARN_TEXT,
   NEXT,
+  NO_DATA_AVAILABLE,
   POINTS,
   SCORE_SUMMARY,
+  SHARE,
   SKIP,
   TOTAL_SCORE,
   WRONG_TEXT,
@@ -68,7 +70,7 @@ const PuzzleScreen: React.FC<PuzzleScreenProps> = ({navigation, route}) => {
       const wordsData = await getWordsApi.request(categoryId);
       if (wordsData) {
         setWords(wordsData);
-        setCurrentWord(shuffleWord(wordsData?.[0]?.word));
+        setCurrentWord(shuffleWord(wordsData?.[0]?.word ?? ''));
       }
     };
     fetchWords();
@@ -109,7 +111,7 @@ const PuzzleScreen: React.FC<PuzzleScreenProps> = ({navigation, route}) => {
           title: SCORE_SUMMARY,
           singleButton: false,
           message: `${TOTAL_SCORE} ${scoreStatus.totalScore}`,
-          negativeText: 'Share',
+          negativeText: SHARE,
           positiveAction: () => saveUserData(),
           negativeAction: () => shareScore(),
         });
@@ -125,15 +127,17 @@ const PuzzleScreen: React.FC<PuzzleScreenProps> = ({navigation, route}) => {
       }
     } else {
       // check to validate whether puzzle solved or not
+      const {word, complexityPoints} = words[currIndex];
       let wordToMatch = '',
         wordLength = currentWord.length;
       selectedBoxes.forEach(idx => (wordToMatch += currentWord[idx]));
-      if (words[currIndex].word === wordToMatch) {
-        const currScore = wordLength * 10;
+      if (word === wordToMatch) {
+        // calculate score based on word length and complexity of the word
+        const currScore = wordLength * 10 * complexityPoints;
         setScoreStatus({
-          totalScore: totalScore + currScore,
-          currentScore: currScore,
           showResult: true,
+          currentScore: currScore,
+          totalScore: totalScore + currScore,
         });
       } else {
         setScoreStatus({
@@ -177,10 +181,19 @@ const PuzzleScreen: React.FC<PuzzleScreenProps> = ({navigation, route}) => {
     [selectedBoxes],
   );
 
-  const renderDescription = useCallback(
-    (currWord: IWords) => <AppText>{currWord.description}</AppText>,
-    [],
-  );
+  const renderDescription = useCallback((currWord: IWords) => {
+    const {description, complexityLevel} = currWord;
+    return (
+      <>
+        <AppText style={styles.descriptionText} numberOfLines={2}>
+          {description}
+        </AppText>
+        <AppText numberOfLines={1} style={styles.complexityText}>
+          {complexityLevel}
+        </AppText>
+      </>
+    );
+  }, []);
 
   const renderActionButton = useCallback(
     () => {
@@ -214,7 +227,7 @@ const PuzzleScreen: React.FC<PuzzleScreenProps> = ({navigation, route}) => {
   return (
     <View style={styles.mainContainer}>
       <Loader visible={getWordsApi.loading} />
-      {words.length > 0 && (
+      {words.length > 0 ? (
         <>
           <PagerView
             style={styles.container}
@@ -225,7 +238,7 @@ const PuzzleScreen: React.FC<PuzzleScreenProps> = ({navigation, route}) => {
             ref={pagerViewRef}>
             {words.map((currWord, currIndex) => {
               const numOfColumns = Math.min(currWord.word?.length, numColumns);
-              const isNoScore = scoreStatus.currentScore === 0;
+              const isScoreZero = scoreStatus.currentScore === 0;
               return (
                 <View
                   key={currWord.word}
@@ -237,14 +250,14 @@ const PuzzleScreen: React.FC<PuzzleScreenProps> = ({navigation, route}) => {
                       <AppText
                         style={[
                           styles.resultText,
-                          isNoScore && styles.resultErrorText,
+                          isScoreZero && styles.resultErrorText,
                         ]}>
-                        {isNoScore ? WRONG_TEXT : CORRECT_TEXT}
+                        {isScoreZero ? WRONG_TEXT : CORRECT_TEXT}
                       </AppText>
                       <AppText
                         style={[
                           styles.pointsText,
-                          isNoScore && styles.resultErrorText,
+                          isScoreZero && styles.resultErrorText,
                         ]}>{`${EARN_TEXT} ${scoreStatus.currentScore} ${POINTS}`}</AppText>
                     </View>
                   ) : (
@@ -252,7 +265,6 @@ const PuzzleScreen: React.FC<PuzzleScreenProps> = ({navigation, route}) => {
                       <FlatList
                         data={[...currWord.word]}
                         numColumns={numOfColumns}
-                        showsVerticalScrollIndicator={false}
                         renderItem={renderUpperBox}
                         keyExtractor={(_, index) => index.toString()}
                         contentContainerStyle={styles.boxContainer}
@@ -261,7 +273,6 @@ const PuzzleScreen: React.FC<PuzzleScreenProps> = ({navigation, route}) => {
                       <FlatList
                         data={currentWord}
                         numColumns={numOfColumns}
-                        showsVerticalScrollIndicator={false}
                         renderItem={renderBottomBox}
                         keyExtractor={(_, index) => index.toString()}
                         contentContainerStyle={styles.boxContainer}
@@ -273,6 +284,12 @@ const PuzzleScreen: React.FC<PuzzleScreenProps> = ({navigation, route}) => {
             })}
           </PagerView>
           {renderActionButton()}
+        </>
+      ) : (
+        <>
+          {!getWordsApi.loading && (
+            <AppText style={styles.errorText}>{NO_DATA_AVAILABLE}</AppText>
+          )}
         </>
       )}
     </View>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1680198430884" clover="3.2.0">
+  <project timestamp="1680198430884" name="All files">
+    <metrics statements="107" coveredstatements="91" conditionals="29" coveredconditionals="19" methods="27" coveredmethods="20" elements="163" coveredelements="130" complexity="0" loc="107" ncloc="107" packages="15" files="24" classes="24"/>
+    <package name="api">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="categoriesApi.ts" path="/Users/v0s0316/ReactNativeProjects/Others/WordPuzzle/src/api/categoriesApi.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.AppText">
+      <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="/Users/v0s0316/ReactNativeProjects/Others/WordPuzzle/src/components/AppText/index.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="10" count="7" type="stmt"/>
+        <line num="11" count="26" type="stmt"/>
+        <line num="12" count="26" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Box">
+      <metrics statements="6" coveredstatements="6" conditionals="6" coveredconditionals="5" methods="2" coveredmethods="2"/>
+      <file name="index.tsx" path="/Users/v0s0316/ReactNativeProjects/Others/WordPuzzle/src/components/Box/index.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="6" coveredconditionals="5" methods="2" coveredmethods="2"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="17" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="18" count="1" type="stmt"/>
+      </file>
+      <file name="styles.ts" path="/Users/v0s0316/ReactNativeProjects/Others/WordPuzzle/src/components/Box/styles.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Button">
+      <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="/Users/v0s0316/ReactNativeProjects/Others/WordPuzzle/src/components/Button/index.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="19" count="15" type="stmt"/>
+        <line num="20" count="15" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.CategoryItem">
+      <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <file name="index.tsx" path="/Users/v0s0316/ReactNativeProjects/Others/WordPuzzle/src/components/CategoryItem/index.tsx">
+        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+      </file>
+      <file name="styles.tsx" path="/Users/v0s0316/ReactNativeProjects/Others/WordPuzzle/src/components/CategoryItem/styles.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="5" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Label">
+      <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="/Users/v0s0316/ReactNativeProjects/Others/WordPuzzle/src/components/Label/index.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Loader">
+      <metrics statements="3" coveredstatements="3" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="/Users/v0s0316/ReactNativeProjects/Others/WordPuzzle/src/components/Loader/index.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="5" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="6" type="stmt"/>
+      </file>
+      <file name="styles.ts" path="/Users/v0s0316/ReactNativeProjects/Others/WordPuzzle/src/components/Loader/styles.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Screen">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="/Users/v0s0316/ReactNativeProjects/Others/WordPuzzle/src/components/Screen/index.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+      <file name="styles.ts" path="/Users/v0s0316/ReactNativeProjects/Others/WordPuzzle/src/components/Screen/styles.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="config">
+      <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="settings.ts" path="/Users/v0s0316/ReactNativeProjects/Others/WordPuzzle/src/config/settings.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="cond" truecount="1" falsecount="1"/>
+      </file>
+    </package>
+    <package name="contexts">
+      <metrics statements="10" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="2"/>
+      <file name="theme.tsx" path="/Users/v0s0316/ReactNativeProjects/Others/WordPuzzle/src/contexts/theme.tsx">
+        <metrics statements="10" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="2"/>
+        <line num="16" count="7" type="stmt"/>
+        <line num="25" count="7" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="41" count="7" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="hooks">
+      <metrics statements="22" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <file name="useApi.ts" path="/Users/v0s0316/ReactNativeProjects/Others/WordPuzzle/src/hooks/useApi.ts">
+        <metrics statements="17" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
+      </file>
+      <file name="useTheme.ts" path="/Users/v0s0316/ReactNativeProjects/Others/WordPuzzle/src/hooks/useTheme.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="5" count="7" type="stmt"/>
+        <line num="6" count="49" type="stmt"/>
+        <line num="7" count="49" type="stmt"/>
+        <line num="10" count="7" type="stmt"/>
+        <line num="13" count="49" type="stmt"/>
+      </file>
+    </package>
+    <package name="navigation">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="routes.ts" path="/Users/v0s0316/ReactNativeProjects/Others/WordPuzzle/src/navigation/routes.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="styles">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="colors.ts" path="/Users/v0s0316/ReactNativeProjects/Others/WordPuzzle/src/styles/colors.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="defaultStyles.ts" path="/Users/v0s0316/ReactNativeProjects/Others/WordPuzzle/src/styles/defaultStyles.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="fonts.ts" path="/Users/v0s0316/ReactNativeProjects/Others/WordPuzzle/src/styles/fonts.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="7" type="stmt"/>
+        <line num="8" count="7" type="stmt"/>
+      </file>
+    </package>
+    <package name="utils">
+      <metrics statements="25" coveredstatements="21" conditionals="6" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="alertUtils.ts" path="/Users/v0s0316/ReactNativeProjects/Others/WordPuzzle/src/utils/alertUtils.ts">
+        <metrics statements="5" coveredstatements="1" conditionals="6" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="32" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+      </file>
+      <file name="constants.ts" path="/Users/v0s0316/ReactNativeProjects/Others/WordPuzzle/src/utils/constants.ts">
+        <metrics statements="20" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="2" count="6" type="stmt"/>
+        <line num="3" count="6" type="stmt"/>
+        <line num="4" count="6" type="stmt"/>
+        <line num="5" count="6" type="stmt"/>
+        <line num="6" count="6" type="stmt"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="12" count="6" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="14" count="6" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="18" count="6" type="stmt"/>
+        <line num="19" count="6" type="stmt"/>
+        <line num="20" count="6" type="stmt"/>
+        <line num="21" count="6" type="stmt"/>
+        <line num="22" count="6" type="stmt"/>
+        <line num="23" count="6" type="stmt"/>
+        <line num="24" count="6" type="stmt"/>
+        <line num="25" count="6" type="stmt"/>
+      </file>
+    </package>
+    <package name="views.Home">
+      <metrics statements="16" coveredstatements="11" conditionals="4" coveredconditionals="2" methods="6" coveredmethods="3"/>
+      <file name="index.tsx" path="/Users/v0s0316/ReactNativeProjects/Others/WordPuzzle/src/views/Home/index.tsx">
+        <metrics statements="15" coveredstatements="10" conditionals="4" coveredconditionals="2" methods="6" coveredmethods="3"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="4" type="stmt"/>
+        <line num="27" count="4" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
+        <line num="35" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="47" count="4" type="stmt"/>
+        <line num="49" count="4" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="60" count="4" type="stmt"/>
+        <line num="62" count="4" type="stmt"/>
+      </file>
+      <file name="styles.ts" path="/Users/v0s0316/ReactNativeProjects/Others/WordPuzzle/src/views/Home/styles.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

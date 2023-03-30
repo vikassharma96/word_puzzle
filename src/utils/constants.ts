@@ -3,15 +3,16 @@ export const WORDS_PUZZLE = 'Words Puzzle';
 export const API_ERROR_MSG = "Couldn't retrieve the categories.";
 export const START = 'Start';
 export const LEADERS_BOARD = 'Leaders Board';
-export const ERROR_MSG = 'Please select category first!';
+export const ERROR_MSG = 'Please select category first';
 
 // Puzzle screen constants
 export const WRONG_TEXT = 'Sorry! \n Bad luck';
 export const CORRECT_TEXT = 'Correct! \n Congratulations';
 export const EARN_TEXT = 'You earn';
 export const POINTS = 'Points';
-export const SCORE_SUMMARY = 'Score Summay!';
+export const SCORE_SUMMARY = 'Score Summay';
 export const TOTAL_SCORE = 'Your total score is';
+export const SHARE = 'Share';
 
 // common constants
 export const ERROR = 'Error!';

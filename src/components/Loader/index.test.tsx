@@ -12,7 +12,7 @@ describe('@components/Loader', () => {
   });
 
   it('should be able to hide the loader', () => {
-    const element = render(<Loader visible={false} />).toJSON();
+    const element = render(<Loader />).toJSON();
     expect(element).toBeNull();
   });
 });

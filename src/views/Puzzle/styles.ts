@@ -11,6 +11,11 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '90%',
   },
+  errorText: {
+    alignSelf: 'center',
+    marginTop: '12%',
+    marginBottom: '2%',
+  },
   itemStyle: {
     width: '100%',
     height: '100%',
@@ -20,16 +25,16 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   boxContainer: {
-    marginTop: '2%',
+    marginTop: '1%',
     alignItems: 'center',
   },
   box: {
     width: 40,
     height: 40,
-    backgroundColor: colors.light.lightGray,
-    margin: '4%',
     alignItems: 'center',
+    margin: '4%',
     justifyContent: 'center',
+    backgroundColor: colors.light.lightGray,
   },
   selectedBox: {
     backgroundColor: '#aaa',
@@ -64,6 +69,16 @@ const styles = StyleSheet.create({
     color: colors.light.green,
     fontFamily: fontFamily.semiBold,
     fontSize: fontSizes.fontSize_18,
+  },
+  descriptionText: {
+    textAlign: 'center',
+  },
+  complexityText: {
+    fontSize: 11,
+    color: 'green',
+    textAlignVertical: 'center',
+    textDecorationLine: 'underline',
+    textAlign: 'center',
   },
 });
 

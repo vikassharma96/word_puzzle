@@ -32,6 +32,7 @@ exports[`@components/Box should match snapshots 1`] = `
       false,
     ]
   }
+  testID="box"
 >
   <Text
     style={

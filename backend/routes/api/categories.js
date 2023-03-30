@@ -19,9 +19,6 @@ router.get('/:id', async (req, res) => {
   await delay(500);
   const id = req.params.id;
   const puzzle = words.find(word => word.categoryId === id)?.puzzle;
-  console.log("🚀 ---------------------------------------------------------🚀")
-  console.log("🚀 ~ file: categories.js:22 ~ router.get ~ puzzle:", id, puzzle)
-  console.log("🚀 ---------------------------------------------------------🚀")
   res.json(puzzle ?? []);
 });
 

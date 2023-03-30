@@ -5,7 +5,7 @@ const categories = [
   },
   {
     id: '01f4185b-18e6-4ed5',
-    name: 'Foods',
+    name: 'Food',
   },
   {
     id: 'a3d3b490-e419-446f',
@@ -17,7 +17,7 @@ const categories = [
   },
   {
     id: '8ab82232-3985-449f',
-    name: 'Maths',
+    name: 'Math',
   },
 ];
 

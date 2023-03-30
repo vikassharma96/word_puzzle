@@ -7,13 +7,14 @@ const styles = StyleSheet.create({
     backgroundColor: colors.default.background,
   },
   title: {
-    marginTop: '6%',
+    marginTop: '4%',
     textAlign: 'center',
     alignSelf: 'center',
   },
   categories: {
     flex: 0.8,
     marginTop: '4%',
+    paddingTop: '2%',
     backgroundColor: colors.default.dullGray,
   },
   errorText: {
