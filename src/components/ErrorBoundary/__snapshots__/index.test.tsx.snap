@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@components/ErrorBoundary should match snapshots 1`] = `
+<Text
+  style={
+    [
+      {
+        "fontFamily": "Poppins-Medium",
+        "fontSize": 14,
+      },
+      {
+        "color": "#000",
+      },
+      undefined,
+    ]
+  }
+>
+  Start
+</Text>
+`;

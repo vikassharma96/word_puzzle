@@ -50,11 +50,10 @@ const styles = StyleSheet.create({
     backgroundColor: colors.default.lightGray,
   },
   resultContainer: {
-    flex: 1,
-    alignItems: 'stretch',
+    flex: 0.9,
+    justifyContent: 'center',
   },
   resultText: {
-    flex: 0.4,
     textAlign: 'center',
     textAlignVertical: 'bottom',
     marginBottom: '2%',
@@ -69,6 +68,7 @@ const styles = StyleSheet.create({
     color: colors.light.green,
     fontFamily: fontFamily.semiBold,
     fontSize: fontSizes.fontSize_18,
+    marginBottom: '6%',
   },
   descriptionText: {
     textAlign: 'center',

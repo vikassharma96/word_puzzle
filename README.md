@@ -10,12 +10,18 @@ This section has the information about how to get get started with the Word Puzz
 ## **App Demo**
 
 <p align="center">
+<img width="180" height="300" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss0.png" alt="logo">
 <img width="180" height="300" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss1.png" alt="logo">
 <img width="180" height="300" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss2.png" alt="logo">
 <img width="180" height="300" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss3.png" alt="logo">
 <img width="180" height="300" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss4.png" alt="logo">
 <img width="180" height="300" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss5.png" alt="logo">
 <img width="180" height="300" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss6.png" alt="logo">
+<img width="180" height="300" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss7.png" alt="logo">
+<img width="180" height="300" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss8.png" alt="logo">
+<img width="180" height="300" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss9.png" alt="logo">
+<img width="180" height="300" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss10.png" alt="logo">
+<img width="180" height="300" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss11.png" alt="logo">
 </p>
 
 ## **Prerequisites**

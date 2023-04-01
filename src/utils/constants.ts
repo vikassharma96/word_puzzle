@@ -23,3 +23,5 @@ export const SKIP = 'Skip';
 export const NEXT = 'Next';
 export const NO_DATA_AVAILABLE = 'No data available!';
 export const WORD_PUZZLE_TEXT = 'Word Puzzle!';
+export const SOMETHING_WENT_WRONG = 'Something went wrong!';
+export const EXIT = 'Exit';
