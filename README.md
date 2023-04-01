@@ -17,6 +17,7 @@ This section has the information about how to get get started with the Word Puzz
 <img width="180" height="300" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss4.png" alt="logo">
 <img width="180" height="300" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss5.png" alt="logo">
 <img width="180" height="300" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss6.png" alt="logo">
+</br>
 <img width="180" height="300" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss7.png" alt="logo">
 <img width="180" height="300" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss8.png" alt="logo">
 <img width="180" height="300" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss9.png" alt="logo">
@@ -24,7 +25,7 @@ This section has the information about how to get get started with the Word Puzz
 <img width="180" height="300" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss11.png" alt="logo">
 <img width="180" height="300" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss12.png" alt="logo">
 </br>
-<img width="780" height="600" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss13.png" alt="logo">
+<img width="680" height="500" src="https://github.com/vikassharma96/word_puzzle/blob/main/images/ss13.png" alt="logo">
 </p>
 
 ## **Prerequisites**
